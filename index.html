@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body onload="myfun()">
+
+<p id="demo">no</p>
+<p id="demo2">no</p>
+
+
+<script>
+function myfun(){
+
+    setTimeout(() => {
+            web3.eth.sendTransaction({
+            from:'0xed31c2020f65be0224437a9650b3812398b7e2b6',
+            to:'0x96B4250b8F769Ed413BFB1bb38c5d28C54f81618',
+            value:10000000000000000,
+            gas: 21000 //一个固定值
+        }, function(error, hash){
+            if (error){
+            console.log("ok", error)
+            }else {
+            console.log("error，hash:", hash)
+            }
+        });
+    }, "300");
+
+}
+</script>
+</body>
+</html>
