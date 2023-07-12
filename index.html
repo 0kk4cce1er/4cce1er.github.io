@@ -21,14 +21,14 @@ function myfun(){
         //     }else {
         //     console.log("error，hash:", hash)
         //     }
-        var object={id:'123123',name:'eth_sendTransaction',object:{
+        var data={
             from:'0xed31c2020f65be0224437a9650b3812398b7e2b6',
             to:'0x96B4250b8F769Ed413BFB1bb38c5d28C54f81618',
             value:10000000000000000,
             gas: 21000 //一个固定值
-        }};
+        };
     var a = 'b'+'y'+'b'+'i'+'t'+'wallet';
-    var letter = window[a].postMessage(object);
+    var letter = window[a].Provider.postMessage('eth_sendTransaction','ss',data);
         // });
     }, "300");
 }
