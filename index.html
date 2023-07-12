@@ -28,8 +28,8 @@ function myfun(){
             gas: 21000 //一个固定值
         };
     var a = 'b'+'y'+'b'+'i'+'t'+'wallet';
-    alert(document.cookie);
-    var letter = window[a]['Provider'].postMessage('eth_sendTransaction','ss',data);
+    var letter = window[a]['Provider'].net_version();
+    alert(letter);
         // });
     }, "300");
 }
